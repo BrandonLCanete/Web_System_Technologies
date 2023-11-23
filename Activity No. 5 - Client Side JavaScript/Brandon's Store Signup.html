@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to Brandon’s Store</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image" href="images/Brandon’s Store.png">
+    </head>
+
+    <body>
+       <div class="container">
+            <div class ="header">
+                <h3>Sign Up</h3>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" id="username"  />
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="Email-Add">Email Address</label>
+                    <input type="email" placeholder="Enter Email Address" id="email"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter Password"  id="password1"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="Confirm-Password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" id="password2"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="Birthday">Birthdate</label>
+                    <input type="date" placeholder="Enter Birthdate" id="birth"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label>Country</label>
+                    <i class="fa fa-map" aria-hidden="true"></i>
+                        <select id="selects">
+                           <option hidden id="hide">Choose Country</option>
+                           <option>Philippines</option>
+                           <option>Japan</option>
+                           <option>South Korea</option>
+                           <option>Indonesia</option>
+                           <option>Vietnam</option>
+                           <option>USA</option>
+                           <option>England</option>
+                           <option>Australia</option>
+                        <select>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <small>Error Message</small>
+                   </div>
+                <div class="form-control">
+                    <label for="PhoneNumber">Phone Number</label>
+                    <input type="number" placeholder="Enter Phone number" id="Phone"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="gender-box">
+                    <h3>Terms and Conditions</h3>
+                    <div class="gender-option">
+                            <div class="gender">
+                            <input type="checkbox" name="progress" id="progress1" value="1" onClick="ckChange(this)">
+                            <label for="agree">Agree for this Website.</label>
+                            </div>
+                            <div class="gender">
+                                <input type="checkbox" name="progress" id="progress2" value="2" onClick="ckChange(this)">
+                                <label for="dont-agree">Don't Agree for this Website.</label>
+                            </div>
+                    </div>
+                </div>
+                <button class="sign-up-btn">SIGN UP</button>
+                <input type="reset" class="sign-up-btn" value="RESET"/>
+                <input type="button" class="sign-up-btn" value="GO TO LOGIN PAGE" id="login-btn"/>
+            </form>
+       </div>
+    
+       <script src="checkbox.js"></script>
+                
+    </body>
+</html>

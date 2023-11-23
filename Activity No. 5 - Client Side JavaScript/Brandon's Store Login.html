@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to Brandon’s Store</title>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image" href="images/Brandon’s Store.png">
+    </head>
+    <body>
+        <div class="container">
+            <div class ="header">
+                <h3>Login</h3>
+            </div>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="Email-Address">Email Address</label>
+                    <input type="email" placeholder="Enter Full Name" id="email"  />
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter Password"  id="password1"/>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <small>Error Message</small>
+                </div>
+                <div class="check-box">
+                    <div class="check">
+                    <input type="checkbox" name="checkbox"/>
+                    <label for="checkbox">Remember Me</label>
+                    </div>
+                </div>
+                
+                <button class="login-btn" id="login-btn">LOGIN</button>
+                <p>No Account? Sign up Here:</p>
+                <input type="button" id="sign-up-btn" value="GO TO SIGN UP PAGE" class="login-btn"/>
+            </form>
+        </div>
+        <script src="button.js"></script>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: lightblue;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+.form{
+    margin-top: 30px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    color: #707070;
+}
+.form-control.success i.fa-check{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control.error small{
+    color: #e74c3c;
+    font-weight: 500;
+    visibility: visible;
+}
+.form-control i{
+    position: absolute;
+    top: 42px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control option {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    color: #707070;
+}
+.form-control select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #707070;
+    font-size: 14px;
+    padding: 10px;
+}
+.form .gender-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.gender-box h3{
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.form .gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
+    color: #333;
+}
+.form .sign-up-btn{
+    height: 55px;
+    width: 100%;
+    background-color: rgb(0,0,0);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.50s,background-color 0.50s,color 0.50s;
+}
+.form .sign-up-btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+}
+
+@media screen and (max-width: 500px) {
+    .form .column{
+        flex-wrap: wrap;
+    }
+    form :where(.gender-option, .gender){
+        row-gap: 15px;
+    }
+}
